@@ -2,7 +2,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
+        HelperClass helperClass = new HelperClass();
         Scanner input =new Scanner(System.in);
         System.out.print("array size : ");
         int size =input.nextInt();
@@ -15,7 +17,12 @@ public class Main {
             System.out.println( i +" value : " + myArray[i]);
 
         }
-        Arrays.sort(myArray);
+
+
+        helperClass.sortArray(myArray);
+
+
+
         System.out.println("my new Array is : " +  Arrays.toString(myArray));
 
 
